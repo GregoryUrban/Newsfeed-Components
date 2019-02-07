@@ -1,4 +1,4 @@
-// Because classes are not hoised you will need to start your code at the bottom of the page.  Look for the comment "START HERE"
+// Because classes are not hoisted you will need to start your code at the bottom of the page.  Look for the comment "START HERE"
 
 class Article {
   constructor(domElement) {
@@ -20,23 +20,13 @@ class Article {
       this.expandButton.textContent = 'expand';
     }
   }
-  // below trying to create without if/ else statement but cannot
-  // expandArticle() { // this is calling back
-  //   // console.log(this.panelBtnOpen)
-  //   this.domElement.classList.toggle('article-open') // reference DOM LISTS https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList
-  //   // this.expandButton.classList.toggle('article-open')
-  //   this.expandButton.textContent.toggle('close') 
-  //   // this.expandButton.textContent.toggle('expand') 
-  // }
-
 }
+
 
 /* START HERE: 
 - Select all classes named ".article" and assign that value to the articles variable. 
  
-- With your selection in place, now chain .forEach() on to the articles variable to iterate over the 
-articles NodeList and create a new instance of Article by passing in each article as a parameter 
-to the constructor.
+- With your selection in place, now chain .forEach() on to the articles variable to iterate over the articles NodeList and create a new instance of Article by passing in each article as a parameter to the constructor.
 */
 
 let articles = document.querySelectorAll('.article');
